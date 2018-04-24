@@ -1,0 +1,14 @@
+price=raw_input("Enter purchase price: ")
+selling=raw_input("Enter selling price: ")
+price=float(price)
+selling=float(selling)
+markup=0.0
+markup=int(markup)
+markup=selling-price
+print "Markup is: $",markup
+percent=(markup/price)*100.0
+percent=str(round(percent,2))
+margin=(markup/selling)*100.0
+margin=str(round(margin,2))
+print "Percentage markup: ",percent,"%"
+print "Profit margin: ",margin, "%"
