@@ -1,5 +1,3 @@
-# portfolio-4-18
-Portfolio (CRCC Asia) Up to 4/23/18
 name=raw_input("What is the name of your team? ")
 win=raw_input("How many games have you won? ")
 lose=raw_input("How many games have you lost? ")
