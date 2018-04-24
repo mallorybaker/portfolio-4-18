@@ -1,0 +1,14 @@
+d=dict()
+l=list()
+file_name = raw_input("Enter a file name: ")
+fhandle=open(file_name)
+for line in fhandle:
+    if line.startswith("From"):
+        email=line.split()[1]
+        d[email]=d.get(email,0)+1
+for r in d:
+    l.append((d[r],r))
+l.sort(reverse=True)
+
+print l[0][1],l[0][0]
+
