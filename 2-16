@@ -1,0 +1,13 @@
+population=raw_input("What is the population? ")
+population=int(population)
+rate=int(1.1)
+year=int(2011)
+print "{0:7} {1:^10}".format(" Year", "Expected population")
+print "-" * 27
+while True:
+    if population<8000000000:
+        population=population+(population*.011)
+        year=year+1
+    print "{0:^7} {1:^10.2f}".format(year, population)
+    if population>=8000000000:
+        break
