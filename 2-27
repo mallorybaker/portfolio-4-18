@@ -1,0 +1,8 @@
+num=raw_input("Enter number: ")
+decimal=num.find(".")
+before=num[:decimal]
+x=len(before)
+print x, "digits to the left of the decimal point."
+after=num[decimal+1:]
+y=len(after)
+print y, "digits to lthe right of the decimal point"
