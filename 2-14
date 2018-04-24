@@ -1,0 +1,11 @@
+email=raw_input('Enter your email text: ')
+x="abcdefghijklmnopqrstuvwxyz"
+newemail=""
+for w in email:
+    if w==" ":
+        newemail=newemail+ " "
+    else:
+        i=x.find(w)
+        newemail=newemail+x[25-i]
+print email
+print newemail
