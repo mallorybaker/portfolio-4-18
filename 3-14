@@ -1,0 +1,8 @@
+deposit=100
+deposit=int(deposit)
+count=1
+while deposit<3000:
+   deposit=(1.0025*deposit)+100
+   count=count+1
+deposit = str(round(deposit, 2))
+print "Annuity will be worth: $"+deposit,"in",count,"months."
