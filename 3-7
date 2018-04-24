@@ -1,0 +1,11 @@
+income=raw_input("Enter your taxable income: ")
+income=float(income)
+if income<=20000:
+    tax=.2*income
+    print "Your tax is: ",tax
+elif income<=50000:
+    tax=400+(.25*(income-20000))
+    print "Your tax is: ",tax
+else:
+    tax=1150+(.035*(income-50000))
+    print "Your tax is: ",tax
